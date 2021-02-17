@@ -31,5 +31,17 @@ Array.prototype.toSum = function () {
     return newArray;
 };
 
+Array.prototype.transpose = function () {
+    let newArray = [];
+        for (let i = 0; i < this.length; i++) {
+                newArray.push([])
+            for (let j = 0; j < this[i].length; j++) {
+                newArray[i].push(this[j][i])
+            }
+       }
+       return newArray;
+};
+
+
 
     
